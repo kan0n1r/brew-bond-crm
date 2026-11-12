@@ -5,7 +5,10 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Create account - CoffeShop</title><link rel="stylesheet" href="${pageContext.request.contextPath}/shop.css"></head>
 <body>
 <main class="narrow">
-    <h1><a href="${pageContext.request.contextPath}/">CoffeShop</a></h1>
+    <a class="brand" href="${pageContext.request.contextPath}/">
+        <img src="${pageContext.request.contextPath}/shop-logo.svg" alt="" width="48" height="48">
+        <span>CoffeShop</span>
+    </a>
     <h2>Create account</h2>
     <c:if test="${not empty error}"><p class="error"><c:out value="${error}"/></p></c:if>
     <form method="post" action="${pageContext.request.contextPath}/register">

@@ -12,6 +12,15 @@ A small Java 12 Servlet/JSP shop for local evaluation. It includes a searchable 
 
 The application uses Java Servlets and JSP views, an embedded Jetty server, and a local SQLite database. Product records are shared through SQLite; cart contents are stored in the browser's server-side session.
 
+## Demo
+
+1. Browse the catalog and search for a product.
+2. Add a product to the cart, then remove it or run the checkout simulation.
+3. Optionally register a regular account and sign in.
+4. Configure the admin environment variables to use `/admin` and add a catalog product.
+
+![CoffeShop catalog demo](docs/images/coffeshop-home.png)
+
 ## Requirements
 
 - Java 12

@@ -5,7 +5,10 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Your cart - CoffeShop</title><link rel="stylesheet" href="${pageContext.request.contextPath}/shop.css"></head>
 <body>
 <main>
-    <h1><a href="${pageContext.request.contextPath}/">CoffeShop</a></h1>
+    <a class="brand" href="${pageContext.request.contextPath}/">
+        <img src="${pageContext.request.contextPath}/shop-logo.svg" alt="" width="48" height="48">
+        <span>CoffeShop</span>
+    </a>
     <h2>Your cart</h2>
     <c:choose>
         <c:when test="${empty lines}"><p>Your cart is empty. <a href="${pageContext.request.contextPath}/">Browse products</a>.</p></c:when>

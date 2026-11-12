@@ -15,6 +15,18 @@ This is a defensive checklist for the local CoffeShop training app. The applicat
 
 For each check, record the check number, route, steps, expected result, observed HTTP status, and a screenshot or a short sanitized log excerpt if available. The app has no dedicated audit-log feature, so a browser screenshot/status is often the relevant evidence. Never include passwords, session cookies, CSRF tokens, or real personal data in screenshots or logs. Keep evidence local unless it has been reviewed and redacted.
 
+## What “PoC” means here
+
+CoffeShop is a secure evaluation target, so these checks are proof-of-control demonstrations, not proof that an exploitable defect exists. A useful PoC record contains:
+
+1. The check number and the local route.
+2. The starting state (for example, signed out, ordinary account, or configured admin).
+3. The UI actions and harmless synthetic input used.
+4. The observed status or page result, compared with the expected result below.
+5. A redacted screenshot or short log excerpt, if available.
+
+Do not add exploit payloads, automation against other systems, real credentials, or session/CSRF values. If an app behavior differs from the expected result, document the observation here without including sensitive request data.
+
 ## Manual checks
 
 These steps verify that the application resists common vulnerability classes; they do not trigger a real vulnerability. Use only harmless text and synthetic accounts. No exploit payload or script is needed.

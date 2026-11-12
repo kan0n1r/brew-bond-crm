@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">CoffeShop cup</title>
+  <rect width="64" height="64" rx="18" fill="#4a3027"/>
+  <path d="M20 27h25v14a10 10 0 0 1-10 10h-5a10 10 0 0 1-10-10V27Z" fill="#f5e8d3"/>
+  <path d="M45 31h3a6 6 0 0 1 0 12h-4" fill="none" stroke="#f5e8d3" stroke-width="4" stroke-linecap="round"/>
+  <path d="M27 21c-3-3 3-4 0-8m9 8c-3-3 3-4 0-8" fill="none" stroke="#d99a58" stroke-width="3" stroke-linecap="round"/>
+  <path d="M17 53h34" stroke="#d99a58" stroke-width="3" stroke-linecap="round"/>
+</svg>

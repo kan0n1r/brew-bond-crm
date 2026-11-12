@@ -15,6 +15,21 @@ a {
     color: #65422c;
 }
 
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #4a3027;
+    font-size: 1.6rem;
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+}
+
+.brand img {
+    display: block;
+}
+
 header, nav, nav form, .search, .products, .card form {
     display: flex;
     align-items: center;
@@ -25,8 +40,23 @@ header, nav {
     justify-content: space-between;
 }
 
+header {
+    border-bottom: 1px solid #ded8cc;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
 nav form {
     margin: 0;
+}
+
+h2 {
+    margin-bottom: 0.25rem;
+}
+
+.lead {
+    color: #71695f;
+    margin-top: 0;
 }
 
 .products {
@@ -44,6 +74,7 @@ nav form {
 
 .card {
     flex: 1 1 240px;
+    box-shadow: 0 8px 24px rgb(74 48 39 / 6%);
 }
 
 .narrow {
@@ -68,6 +99,14 @@ input, textarea, button {
 
 button {
     cursor: pointer;
+    background: #4a3027;
+    border: 1px solid #4a3027;
+    border-radius: 0.35rem;
+    color: white;
+}
+
+button:hover {
+    background: #65422c;
 }
 
 .price {

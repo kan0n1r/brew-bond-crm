@@ -10,7 +10,10 @@
 </head>
 <body>
 <header>
-    <h1><a href="${pageContext.request.contextPath}/">CoffeShop</a></h1>
+    <a class="brand" href="${pageContext.request.contextPath}/">
+        <img src="${pageContext.request.contextPath}/shop-logo.svg" alt="" width="48" height="48">
+        <span>CoffeShop</span>
+    </a>
     <nav>
         <a href="${pageContext.request.contextPath}/cart">Cart</a>
         <c:choose>
@@ -32,6 +35,7 @@
 <main>
     <c:if test="${param.checkout eq 'complete'}"><p class="notice">Checkout simulation complete. No payment was collected.</p></c:if>
     <h2>Fresh picks</h2>
+    <p class="lead">Coffee and tea for a slower, better break.</p>
     <form method="get" action="${pageContext.request.contextPath}/" class="search">
         <label for="q">Search products</label>
         <input id="q" name="q" maxlength="80" value="<c:out value='${search}'/>">
