@@ -87,6 +87,44 @@ These steps verify that the application resists common vulnerability classes; th
     2. Inspect its response headers.
     - Expected: `Content-Security-Policy` includes `frame-ancestors 'none'`; `X-Frame-Options` is `DENY`; `X-Content-Type-Options` is `nosniff`; and `Referrer-Policy` is present.
 
+## Local curl proof-of-control checks
+
+Start CoffeShop on an available local port, for example with `PORT=18080 mvn exec:java`, then use these requests against that same instance. They demonstrate that input is handled as data and unauthenticated/state-changing requests are rejected; they do not exploit a defect.
+
+1. Search with harmless punctuation:
+
+   ```sh
+   curl -i --get --data-urlencode "q=coffee's" http://127.0.0.1:18080/
+   ```
+
+   Expected: HTTP 200, a normal catalog page, and no database error.
+
+2. Request the admin page without an authenticated session:
+
+   ```sh
+   curl -i http://127.0.0.1:18080/admin
+   ```
+
+   Expected: HTTP 403.
+
+3. Submit a state-changing request without a session-bound form token:
+
+   ```sh
+   curl -i -X POST http://127.0.0.1:18080/checkout
+   ```
+
+   Expected: HTTP 403 and no cart change.
+
+4. Inspect the response headers:
+
+   ```sh
+   curl -sS -D - -o /dev/null http://127.0.0.1:18080/
+   ```
+
+   Expected: the response includes the browser security headers listed in check 10.
+
+Do not substitute exploit payloads or run these requests against a public or third-party host. If one of these local checks returns an unexpected result, record the status and a redacted response excerpt in this file.
+
 ## Scope note
 
 Checkout is only a cart-clearing simulation. It does not collect payment details, create real orders, or contact external services. This sample is for local evaluation, not production deployment.
