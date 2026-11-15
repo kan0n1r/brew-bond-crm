@@ -21,7 +21,7 @@ public final class ShopServer {
         Server server = new Server(port);
         WebAppContext web = new WebAppContext();
         web.setContextPath("/");
-        web.setWar("target/coffeshop.war");
+        web.setWar("target/brew-bond-crm.war");
         web.setParentLoaderPriority(true);
         web.setAttribute("org.eclipse.jetty.containerInitializers",
                 Collections.singletonList(new ContainerInitializer(new JettyJasperInitializer(), null)));

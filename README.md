@@ -1,6 +1,6 @@
-# CoffeShop
+# BrewBond CRM
 
-A small Java 12 Servlet/JSP shop for local evaluation. It includes a searchable catalog, account registration and sign-in, a session cart, simulated checkout, and a role-protected product admin page.
+A small Java 12 Servlet/JSP customer relationship management app for a fictional coffee shop. It includes a searchable catalog, account registration and sign-in, a session cart, simulated checkout, and a role-protected product admin page.
 
 ## What the app does
 
@@ -19,7 +19,7 @@ The application uses Java Servlets and JSP views, an embedded Jetty server, and 
 3. Optionally register a regular account and sign in.
 4. Configure the admin environment variables to use `/admin` and add a catalog product.
 
-![CoffeShop catalog demo](docs/images/coffeshop-home.png)
+![BrewBond CRM catalog demo](docs/images/brew-bond-crm-home.png)
 
 ## Requirements
 
@@ -33,7 +33,7 @@ mvn package
 mvn exec:java
 ```
 
-Open [http://localhost:8080](http://localhost:8080). The SQLite database is created at `data/coffeshop.db`; override the path with `SHOP_DB_PATH`.
+Open [http://localhost:8080](http://localhost:8080). The SQLite database is created at `data/brew-bond-crm.db`; override the path with `SHOP_DB_PATH`.
 
 To configure an admin account on first startup, provide both `SHOP_ADMIN_USERNAME` and `SHOP_ADMIN_PASSWORD`. The first configured admin is created only if the database does not already contain an admin. Usernames must be 3-32 letters, numbers, dots, dashes, or underscores; passwords must be 12-128 characters. Registration only creates ordinary users.
 

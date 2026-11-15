@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 final class ShopDatabase {
-    private static final String DB_PATH = System.getenv().getOrDefault("SHOP_DB_PATH", "data/coffeshop.db");
+    private static final String DB_PATH = System.getenv().getOrDefault("SHOP_DB_PATH", "data/brew-bond-crm.db");
     private static final String URL = "jdbc:sqlite:" + DB_PATH;
 
     private ShopDatabase() {

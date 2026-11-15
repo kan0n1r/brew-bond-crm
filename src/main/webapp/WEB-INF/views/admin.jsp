@@ -2,12 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin - CoffeShop</title><link rel="stylesheet" href="${pageContext.request.contextPath}/shop.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin - BrewBond CRM</title><link rel="stylesheet" href="${pageContext.request.contextPath}/shop.css"></head>
 <body>
 <main>
     <a class="brand" href="${pageContext.request.contextPath}/">
         <img src="${pageContext.request.contextPath}/shop-logo.svg" alt="" width="48" height="48">
-        <span>CoffeShop</span>
+        <span>BrewBond CRM</span>
     </a>
     <h2>Product administration</h2>
     <p><a href="${pageContext.request.contextPath}/">Return to shop</a></p>

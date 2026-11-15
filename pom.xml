@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.acme</groupId>
-    <artifactId>coffeshop</artifactId>
+    <artifactId>brew-bond-crm</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
@@ -65,7 +65,7 @@
     </dependencies>
 
     <build>
-        <finalName>coffeshop</finalName>
+        <finalName>brew-bond-crm</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

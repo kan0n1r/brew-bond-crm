@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CoffeShop</title>
+    <title>BrewBond CRM</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/shop.css">
 </head>
 <body>
 <header>
     <a class="brand" href="${pageContext.request.contextPath}/">
         <img src="${pageContext.request.contextPath}/shop-logo.svg" alt="" width="48" height="48">
-        <span>CoffeShop</span>
+        <span>BrewBond CRM</span>
     </a>
     <nav>
         <a href="${pageContext.request.contextPath}/cart">Cart</a>
